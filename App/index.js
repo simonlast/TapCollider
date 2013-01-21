@@ -48,6 +48,7 @@ var startedPullDown = false;
 var menuPhase;
 
 var globalSetup = function(){
+	setLevel(32);
 	initLevel();
 	//console.log(bestLevel);
 	setup();
@@ -322,6 +323,9 @@ var advance = function(){
 	started = true;
 	startedPullDown = false;
 	level++;
+	if(level > levels.length){
+		level = 0;
+	}
 	resets = 0;
 	incLevel();
 	setup();

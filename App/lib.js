@@ -40,7 +40,7 @@ Sketch.create = function( options ) {
 	}, false );
 
 	document.addEventListener('touchend', function( ev ) {
-    	ctx.onTouchEnd(ev.touches[0].pageX, ev.touches[0].pageY);
+		ctx.onTouchEnd(ev.touches[0].pageX, ev.touches[0].pageY);
 	}, false );
 	
 	Sketch.helpers(ctx);

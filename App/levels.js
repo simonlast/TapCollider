@@ -364,6 +364,17 @@ var levels = [
 			],
 			player: {r:216,g:168,b:120}
 		},
+		player: {x: ctx.width/2, y:ctx.height*1/6},
+		circles: [
+		{x:ctx.width*1/4, y:ctx.height*2/6, type:'MoveBall', toX:ctx.width*3/4,
+			toY: ctx.height*2/6},
+		{x:ctx.width*3/4, y:ctx.height*3/6, type:'MoveBall', toX:ctx.width*1/4,
+			toY: ctx.height*3/6},
+		{x:ctx.width*1/4, y:ctx.height*5/6, type:'MoveBall', toX:ctx.width*3/4,
+			toY: ctx.height*4/6}
+		]	
+	},
+	{
 		player: {x: ctx.width/2, y:ctx.height/2},
 		circles: [
 		{x:ctx.width*2/5, y:ctx.height*3/12, type:'MoveBall', toX:ctx.width*3/5,
@@ -377,6 +388,62 @@ var levels = [
 		{x:ctx.width/2, y:ctx.height*1/3, rad: circleRadius*2/3, type:'BrickBall'},
 		{x:ctx.width/2, y:ctx.height*2/3, rad: circleRadius*2/3, type:'BrickBall'}
 		]
+	},
+	{
+		player: {x: ctx.width/2, y:ctx.height/2},
+		circles: [
+		{x:ctx.width*1/5, y:ctx.height*1/4, type:'MoveBall', toX:ctx.width*4/5,
+			toY: ctx.height*1/4},
+		{x:ctx.width*4/5, y:ctx.height*1/4, type:'MoveBall', toX:ctx.width*1/5,
+			toY: ctx.height*1/4},
+		{x:ctx.width*1/5, y:ctx.height*3/4, type:'MoveBall', toX:ctx.width*4/5,
+			toY: ctx.height*3/4},
+		{x:ctx.width*4/5, y:ctx.height*3/4, type:'MoveBall', toX:ctx.width*1/5,
+			toY: ctx.height*3/4},
+		{x:ctx.width/4, y:ctx.height/2, rad: circleRadius*2/3, type:'BrickBall'},
+		{x:ctx.width*3/4, y:ctx.height/2, rad: circleRadius*2/3, type:'BrickBall'}
+		]
+	},
+	{
+		player: {x: ctx.width/2, y:ctx.height*3/4},
+		circles: [
+		{x:ctx.width/2, y:ctx.height*1/8, type:'MoveBall', toX:ctx.width/2,
+			toY: ctx.height*1/3},
+		{x:ctx.width*1/5, y:ctx.height*1/2, type:'MoveBall', toX:ctx.width*1/2,
+			toY: ctx.height*1/3},
+		{x:ctx.width*4/5, y:ctx.height*1/2, type:'MoveBall', toX:ctx.width*1/2,
+			toY: ctx.height*1/3},
+		{x:ctx.width/2, y:ctx.height/3, rad: circleRadius*2/3, type:'BrickBall'}
+		]
+	},
+	{
+		player: {x: ctx.width/2, y:ctx.height*3/4},
+		circles: [
+		{x:ctx.width/5, y:ctx.height*1/8, type:'MoveBall', toX:ctx.width/5,
+			toY: ctx.height*1/3},
+		{x:ctx.width/2, y:ctx.height*1/8, type:'MoveBall', toX:ctx.width/2,
+			toY: ctx.height*1/2},
+		{x:ctx.width*4/5, y:ctx.height*1/8, type:'MoveBall', toX:ctx.width*4/5,
+			toY: ctx.height*2/3},
+		{x:ctx.width/5, y:ctx.height*1/8, rad: circleRadius*2/3},
+		{x:ctx.width/2, y:ctx.height*1/8, rad: circleRadius*2/3},
+		{x:ctx.width*4/5, y:ctx.height*1/8, rad: circleRadius*2/3}
+		]
+	},
+	{
+		player: {x: ctx.width/2, y:ctx.height*3/4},
+		circles: [
+		{x:ctx.width/5, y:ctx.height*1/8, type:'MoveBall', toX:ctx.width/5,
+			toY: ctx.height*1/3},
+		{x:ctx.width/2, y:ctx.height*1/8, type:'MoveBall', toX:ctx.width/2,
+			toY: ctx.height*1/2},
+		{x:ctx.width*4/5, y:ctx.height*1/8, type:'MoveBall', toX:ctx.width*4/5,
+			toY: ctx.height*2/3},
+		{x:ctx.width/5, y:ctx.height*1/8, rad: circleRadius*2/3},
+		{x:ctx.width/2, y:ctx.height*1/8, rad: circleRadius*2/3},
+		{x:ctx.width*4/5, y:ctx.height*1/8, rad: circleRadius*2/3}
+		]
 	}
+	
 
 ];
